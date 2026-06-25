@@ -1,4 +1,4 @@
-button{
+.submit{
     
     border-radius:5px ;
     border-color: blueviolet;
@@ -6,6 +6,19 @@ button{
     color: aliceblue;
     padding: 5px 10px 5px 10px;
     
+}
+.student{
+    
+    border-radius:5px ;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 5px 10px 5px 10px;
+    
+}
+.submit{
+    text-align: center;
+    margin-left: 115px;
 }
 
 fieldset{
