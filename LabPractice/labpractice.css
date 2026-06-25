@@ -1,0 +1,25 @@
+button{
+    
+    border-radius:5px ;
+    border-color: blueviolet;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+fieldset{
+    border-radius: 25px;
+    border-color: blueviolet;
+    margin:40px 450px;
+}
+
+legend{
+border-radius: 25px;
+}
+label{
+    display: block;
+}
+
+
+
