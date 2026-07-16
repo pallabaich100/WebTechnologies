@@ -1,6 +1,5 @@
 console.log("Conected with javaScript")
 
-   let totalStudent = 0;
 
 function validateForm(){
     const fName = document.getElementById("firstName").value;
@@ -15,10 +14,10 @@ let isValid = true;
 
 console.log(fName,lName,sId,email,creCom,dept);
 if(!fName){
-    document.getElementById("fNameError").innerHTML="Enter your first name.";
+    document.getElementById("fNameError").innerHTML="First name required! Enter your first name.";
     isValid = false;
 }else if(fName.length<4){
-    document.getElementById("fNameError").innerHTML="First name have to at least 4 character.";
+    document.getElementById("fNameError").innerHTML="First name have to at least 4 characters long.";
     isValid = false;
 }else{
     document.getElementById("fNameError").innerHTML="";
@@ -26,7 +25,7 @@ if(!fName){
 
 
 if(!lName){
-    document.getElementById("lNameError").innerHTML="Enter your last name.";
+    document.getElementById("lNameError").innerHTML="Last name required! Enter your last name.";
     isValid = false;
 }else{
     document.getElementById("lNameError").innerHTML="";
@@ -35,7 +34,7 @@ if(!lName){
 
 
 if(!sId){
-    document.getElementById("studentIdError").innerHTML="Enter your student id.";
+    document.getElementById("studentIdError").innerHTML="Student id required! Enter your student id.";
     isValid = false;
 }else if(!sId.includes("-")){
     document.getElementById("studentIdError").innerHTML="Student id must contain a hypen(-).";
@@ -46,10 +45,10 @@ if(!sId){
 
 
  if(!email){
-    document.getElementById("emailError").innerHTML="Enter your student email.";
+    document.getElementById("emailError").innerHTML="Email required! Enter your student email.";
     isValid = false;
  }else if(!email.includes("@student.aiub.edu")){
-   document.getElementById("emailError").innerHTML="Incorrect! Your email have to @student.aiub.edu";
+   document.getElementById("emailError").innerHTML="Incorrect! Your email have to includes @student.aiub.edu";
    isValid = false;
  }else{
     document.getElementById("emailError").innerHTML="";
@@ -57,7 +56,7 @@ if(!sId){
 
 
  if(!creCom){
-    document.getElementById("creditCompletedError").innerHTML="Enter your completed credit amount.";
+    document.getElementById("creditCompletedError").innerHTML="Completed credit required! Enter your completed credit amount.";
     isValid = false;
  }else if(Number(creCom)>148){
     document.getElementById("creditCompletedError").innerHTML="Incorrect! Credit can't be more than 148.";
@@ -67,7 +66,7 @@ if(!sId){
  }
 
  if(!dept){
- document.getElementById("departmentError").innerHTML="Select your department.";
+ document.getElementById("departmentError").innerHTML="Please select your department.";
  isValid = false;
 
  }else{
@@ -85,10 +84,6 @@ const row = table.insertRow();
    row.insertCell(3).innerHTML = email;
    row.insertCell(4).innerHTML = creCom;
    row.insertCell(5).innerHTML = dept;
-
-      totalStudent++;
-
-      document.getElementById("studentCount").innerHTML=totalStudent;
 
 document.querySelector("form").reset();
  }

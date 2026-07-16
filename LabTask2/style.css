@@ -1,0 +1,21 @@
+.container{
+    background-color:rgb(67, 126, 102);
+    width: 400px;
+    margin: auto;
+}
+fieldset{
+    border-radius: 10px;
+    border-color: black;
+    
+}
+.label{
+    font-weight: bold;
+}
+input,select{
+    background-color: red;
+}
+
+th{
+background-color: rgb(72, 120, 104);
+}
+ 

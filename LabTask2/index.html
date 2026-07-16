@@ -12,32 +12,32 @@
         <form onsubmit="return validateForm()">
             <table>
                 <tr>
-                    <td>First Name:</td>
-                    <td><input type="text" id="firstName"/>
-                    <p id="fNameError" style="font-size: 10px; color: red;"></p></td>
+                    <td><div class="label">Name:</div></td>
+                    <td><div class="gap"><input type="text" id="firstName"/>
+                    <p id="fNameError" style="font-size: 10px; color: red;"></p></div></td>
                 </tr>
                 <tr>
-                    <td>Last Name:</td>
+                    <td><div class="label">Last Name:</div></td>
                     <td><input type="text" id="lastName"/>
                     <p id ="lNameError" style="font-size: 10px; color: red;"></p></td>
                 </tr>
                 <tr>
-                    <td>Student ID:</td>
+                    <td><div class="label">Student ID:</div></td>
                     <td><input type="text" id="studentId"/>
                     <p id="studentIdError" style="font-size: 10px; color: red;"></p></td>
                 </tr>
                 <tr>
-                    <td>Email:</td>
+                    <td><div class="label" >Email:</div></td>
                     <td><input type="email" id="email"/>
                     <p id="emailError" style="font-size: 10px; color: red;"></p></td>
                 </tr>
                 <tr>
-                    <td>Credit Completed :</td>
+                    <td><div class="label" >Credit Completed :</div></td>
                     <td><input type="text" id="creditCompleted"/>
                     <p id="creditCompletedError" style="font-size: 10px; color: red;"></p></td>
                 </tr>
                 <tr>
-                    <td>Department :</td>
+                    <td><div class="label">Department :</div></td>
                     <td>
                     <select id="department">
                        <option value="">Select Department</option>
@@ -51,15 +51,12 @@
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="Submit" value="submit"/></td>
+                    <td><input type="Submit" value="submit"></td>
                 </tr>
             </table>
         </form>
     </fieldset>
     </div>
-                 <h4>Total Registered Student :
-                 <span id ="studentCount">0</span>
-                 </h4>
 <h4>Registered Students Details:</h4>
 <table border="1" id="studentTable">
         <tr>
